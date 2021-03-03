@@ -1,9 +1,9 @@
 import { Given , And , Then , When} from "cypress-cucumber-preprocessor/steps";
 
-const url = 'https://www.google.co.uk'
+const googleurl = 'https://www.google.co.uk'
 
 Given('As someone interested in cryptocurrencies', () => {
-  cy.visit(url).reload()
+  cy.visit(googleurl).reload()
 })
 
 When('I type {string} in Google search input', (searchtxt) => {
